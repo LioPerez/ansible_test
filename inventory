@@ -1,6 +1,9 @@
 #Mise à jour de l'inventory avec les adresses IP de l'école.
 
+[winservers]
 192.168.10.131
+
+[linuxservers]
 192.168.10.132
 
 

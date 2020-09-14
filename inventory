@@ -1,9 +1,18 @@
 #Mise à jour de l'inventory avec les adresses IP de l'école.
 
-[winservers]
+[winsrv]
 192.168.10.131
 
-[linuxservers]
+[winsrv:vars]
+ansible_user=ansibleadmin
+ansible_password=Winadmin-1
+ansible_connection=ssh
+ansible_shell_type=cmd
+
+[linuxsrv]
 192.168.10.132
 
-
+[linuxsrv:vars]
+ansible_user=ansibleadmin
+ansible_password=Winadmin-1
+ansible_connection=ssh

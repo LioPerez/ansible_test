@@ -1,0 +1,9 @@
+---
+
+- hosts : linuxsrv
+  become: true
+  tasks:
+
+  - name: install apache packages
+    yum:
+      name: httpd	

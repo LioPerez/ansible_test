@@ -1,0 +1,11 @@
+---
+
+- hosts: winsrv
+  gather_facts: no
+  tasks:
+
+  - name: install git
+    win_chocolatey:
+      name: git
+      state: present	
+     

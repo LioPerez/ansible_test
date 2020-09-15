@@ -6,4 +6,18 @@
 
   - name: install apache packages
     yum:
-      name: httpd	
+      name: httpd
+      state : present
+  - name: Verifier que le service httpd/apache est en cours 
+    service:
+      name: httpd
+      state: started
+  - name: Ouvrir le port 80 pour http		
+    firewalld:
+      service: http
+      permanent: true
+      state: enabled
+  - name: Redemarrer le service firewall pour le load
+    service:	
+      name: firewalld
+      state: restarted

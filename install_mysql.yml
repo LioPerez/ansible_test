@@ -1,0 +1,13 @@
+--- 
+
+- hosts: winsrv
+  gather_facts: no
+  tasks:
+  - name: Install MySQL
+    win_chocolatey:
+      name: mysql
+      state: present
+  - name: verifier service mysql est en cours
+    win_service:
+      name: mysql
+      state: started

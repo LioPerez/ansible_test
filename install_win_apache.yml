@@ -1,0 +1,21 @@
+---
+
+- hosts: winsrv
+  gather_facts: no
+  tasks:
+  - name: Install Apache
+    win_chocolatey:
+      name: apache-httpd
+      state: present
+  - name: Verifier service httpd/apache est en cours
+    win_service:
+      name: apache
+      state: started
+  - name: Verifier que le port 80 pour http est bien ouvert
+    win_firewall_rule:
+      name: firewallrulehttpin
+      enable: yes
+      localport: 80
+      direction: in
+      action: allow
+      protocol: TCP

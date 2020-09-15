@@ -14,5 +14,5 @@ ansible_shell_type=cmd
 
 [linuxsrv:vars]
 ansible_user=ansibleadmin
-ansible_password=Winadmin-1
+ansible_password=CentOSadmin-1
 ansible_connection=ssh

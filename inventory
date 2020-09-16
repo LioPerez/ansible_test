@@ -26,6 +26,8 @@ ansible_connection=network_cli
 ansible_network_os=ios
 ansible_user=ansibleadmin
 ansible_password=IOSadmin-1
+ansible_become_method=enable
+ansible_become_pass=cisco
 
 [ciscosw]
 192.168.10.133
@@ -35,6 +37,8 @@ ansible_connection=network_cli
 ansible_network_os=ios
 ansible_user=ansibleadmin
 ansible_password=IOSadmin-1
+ansible_become_method=enable
+ansible_become_pass=cisco
 
 [ciscort]
 192.168.10.134
@@ -44,3 +48,5 @@ ansible_connection=network_cli
 ansible_network_os=ios
 ansible_user=ansibleadmin
 ansible_password= IOSadmin-1
+ansible_become_method=enable
+ansible_become_pass=cisco

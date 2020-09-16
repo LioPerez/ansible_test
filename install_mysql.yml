@@ -1,0 +1,14 @@
+---
+
+- hosts: linuxsrv
+  become: true
+  tasks:
+
+  - name: install mysql packages
+    yum:
+      name: mysql-server.x86_64
+      state: present
+  - name: Verifier que le service mysql est en cours
+    service:
+      name: mysqld
+      state: started

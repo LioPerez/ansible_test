@@ -1,0 +1,14 @@
+---
+- hosts: cisco
+  gather_facts: no
+  become: true	
+  connection: local
+  tasks:
+
+  - name: create a banner
+    ios_banner:
+      banner: login
+      text: |
+        Test de baniere
+        avec Ansible
+      state: present

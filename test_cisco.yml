@@ -1,0 +1,9 @@
+---
+- hosts: ciscort
+  become: true
+  gather_facts: false
+  tasks:
+
+  - name: show ip interface brief
+    ios_command:
+      commands: show ip interface brief

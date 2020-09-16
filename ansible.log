@@ -1,0 +1,295 @@
+2020-09-16 15:44:19,910 p=42684 u=ansibleadmin n=ansible |  [ERROR]: User interrupted execution
+
+2020-09-16 15:44:28,828 p=42695 u=ansibleadmin n=ansible | PLAY [cisco] ******************************************************************************************************************************************************************************************************
+2020-09-16 15:44:28,837 p=42695 u=ansibleadmin n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2020-09-16 15:44:29,259 p=42702 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 15:44:29,259 p=42703 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 15:44:29,261 p=42702 u=ansibleadmin n=ansible | [WARNING]: Ignoring timeout(10) for ios_facts
+
+2020-09-16 15:44:29,261 p=42703 u=ansibleadmin n=ansible | [WARNING]: Ignoring timeout(10) for ios_facts
+
+2020-09-16 15:44:29,810 p=42713 u=ansibleadmin n=p=42713 u=ansibleadmin | paramiko [192.168.10.133] | Connected (version 1.99, client Cisco-1.25)
+2020-09-16 15:44:29,820 p=42715 u=ansibleadmin n=p=42715 u=ansibleadmin | paramiko [192.168.10.134] | Connected (version 2.0, client Cisco-1.25)
+2020-09-16 15:44:30,622 p=42715 u=ansibleadmin n=p=42715 u=ansibleadmin | paramiko [192.168.10.134] | Authentication (password) successful!
+2020-09-16 15:44:31,270 p=42713 u=ansibleadmin n=p=42713 u=ansibleadmin | paramiko [192.168.10.133] | Authentication (password) successful!
+2020-09-16 15:44:32,842 p=42695 u=ansibleadmin n=ansible | [WARNING]: default value for `gather_subset` will be changed to `min` from `!config` v2.11 onwards
+
+2020-09-16 15:44:32,843 p=42695 u=ansibleadmin n=ansible | ok: [192.168.10.134]
+2020-09-16 15:44:36,606 p=42695 u=ansibleadmin n=ansible | ok: [192.168.10.133]
+2020-09-16 15:44:36,612 p=42695 u=ansibleadmin n=ansible | TASK [create a banner] ********************************************************************************************************************************************************************************************
+2020-09-16 15:44:37,720 p=42695 u=ansibleadmin n=ansible | fatal: [192.168.10.134]: FAILED! => {"changed": false, "msg": "operation requires privilege escalation"}
+2020-09-16 15:44:37,840 p=42695 u=ansibleadmin n=ansible | fatal: [192.168.10.133]: FAILED! => {"changed": false, "msg": "operation requires privilege escalation"}
+2020-09-16 15:44:37,845 p=42695 u=ansibleadmin n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2020-09-16 15:44:37,845 p=42695 u=ansibleadmin n=ansible | 192.168.10.133             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-16 15:44:37,845 p=42695 u=ansibleadmin n=ansible | 192.168.10.134             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-16 15:44:37,947 p=42715 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 15:44:37,956 p=42713 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 15:45:07,323 p=42813 u=ansibleadmin n=ansible | PLAY [cisco] ******************************************************************************************************************************************************************************************************
+2020-09-16 15:45:07,332 p=42813 u=ansibleadmin n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2020-09-16 15:45:07,788 p=42821 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 15:45:07,790 p=42820 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 15:45:07,790 p=42821 u=ansibleadmin n=ansible | [WARNING]: Ignoring timeout(10) for ios_facts
+
+2020-09-16 15:45:07,792 p=42820 u=ansibleadmin n=ansible | [WARNING]: Ignoring timeout(10) for ios_facts
+
+2020-09-16 15:45:08,379 p=42833 u=ansibleadmin n=p=42833 u=ansibleadmin | paramiko [192.168.10.134] | Connected (version 2.0, client Cisco-1.25)
+2020-09-16 15:45:08,408 p=42831 u=ansibleadmin n=p=42831 u=ansibleadmin | paramiko [192.168.10.133] | Connected (version 1.99, client Cisco-1.25)
+2020-09-16 15:45:09,179 p=42833 u=ansibleadmin n=p=42833 u=ansibleadmin | paramiko [192.168.10.134] | Authentication (password) successful!
+2020-09-16 15:45:09,885 p=42831 u=ansibleadmin n=p=42831 u=ansibleadmin | paramiko [192.168.10.133] | Authentication (password) successful!
+2020-09-16 15:45:11,427 p=42813 u=ansibleadmin n=ansible | [WARNING]: default value for `gather_subset` will be changed to `min` from `!config` v2.11 onwards
+
+2020-09-16 15:45:11,427 p=42813 u=ansibleadmin n=ansible | ok: [192.168.10.134]
+2020-09-16 15:45:15,191 p=42813 u=ansibleadmin n=ansible | ok: [192.168.10.133]
+2020-09-16 15:45:15,196 p=42813 u=ansibleadmin n=ansible | TASK [create a banner] ********************************************************************************************************************************************************************************************
+2020-09-16 15:45:16,332 p=42813 u=ansibleadmin n=ansible | fatal: [192.168.10.134]: FAILED! => {"changed": false, "msg": "operation requires privilege escalation"}
+2020-09-16 15:45:16,401 p=42813 u=ansibleadmin n=ansible | fatal: [192.168.10.133]: FAILED! => {"changed": false, "msg": "operation requires privilege escalation"}
+2020-09-16 15:45:16,405 p=42813 u=ansibleadmin n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2020-09-16 15:45:16,405 p=42813 u=ansibleadmin n=ansible | 192.168.10.133             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-16 15:45:16,405 p=42813 u=ansibleadmin n=ansible | 192.168.10.134             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-16 15:45:16,516 p=42833 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 15:45:16,518 p=42831 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 15:46:42,990 p=42968 u=ansibleadmin n=ansible | PLAY [cisco] ******************************************************************************************************************************************************************************************************
+2020-09-16 15:46:42,998 p=42968 u=ansibleadmin n=ansible | TASK [Gathering Facts] ********************************************************************************************************************************************************************************************
+2020-09-16 15:46:43,451 p=42976 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 15:46:43,453 p=42976 u=ansibleadmin n=ansible | [WARNING]: Ignoring timeout(10) for ios_facts
+
+2020-09-16 15:46:43,455 p=42975 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 15:46:43,457 p=42975 u=ansibleadmin n=ansible | [WARNING]: Ignoring timeout(10) for ios_facts
+
+2020-09-16 15:46:44,027 p=42988 u=ansibleadmin n=p=42988 u=ansibleadmin | paramiko [192.168.10.133] | Connected (version 1.99, client Cisco-1.25)
+2020-09-16 15:46:44,029 p=42985 u=ansibleadmin n=p=42985 u=ansibleadmin | paramiko [192.168.10.134] | Connected (version 2.0, client Cisco-1.25)
+2020-09-16 15:46:44,826 p=42985 u=ansibleadmin n=p=42985 u=ansibleadmin | paramiko [192.168.10.134] | Authentication (password) successful!
+2020-09-16 15:46:45,489 p=42988 u=ansibleadmin n=p=42988 u=ansibleadmin | paramiko [192.168.10.133] | Authentication (password) successful!
+2020-09-16 15:46:47,068 p=42968 u=ansibleadmin n=ansible | [WARNING]: default value for `gather_subset` will be changed to `min` from `!config` v2.11 onwards
+
+2020-09-16 15:46:47,069 p=42968 u=ansibleadmin n=ansible | ok: [192.168.10.134]
+2020-09-16 15:46:50,920 p=42968 u=ansibleadmin n=ansible | ok: [192.168.10.133]
+2020-09-16 15:46:50,925 p=42968 u=ansibleadmin n=ansible | TASK [create a banner] ********************************************************************************************************************************************************************************************
+2020-09-16 15:46:52,003 p=42968 u=ansibleadmin n=ansible | [DEPRECATION WARNING]: Param 'auth_pass' is deprecated. See the module docs for more information. This feature will be removed in version 2.9. Deprecation warnings can be disabled by setting 
+deprecation_warnings=False in ansible.cfg.
+2020-09-16 15:46:52,004 p=42968 u=ansibleadmin n=ansible | fatal: [192.168.10.134]: FAILED! => {"changed": false, "msg": "operation requires privilege escalation"}
+2020-09-16 15:46:52,119 p=42968 u=ansibleadmin n=ansible | fatal: [192.168.10.133]: FAILED! => {"changed": false, "msg": "operation requires privilege escalation"}
+2020-09-16 15:46:52,122 p=42968 u=ansibleadmin n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2020-09-16 15:46:52,122 p=42968 u=ansibleadmin n=ansible | 192.168.10.133             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-16 15:46:52,122 p=42968 u=ansibleadmin n=ansible | 192.168.10.134             : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-16 15:46:52,224 p=42985 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 15:46:52,235 p=42988 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 15:52:45,881 p=43146 u=ansibleadmin n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  could not find expected ':'
+
+The error appears to be in '/home/ansibleadmin/ansible_test/create_cisco_banner.yml': line 4, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  gather_facts:no
+  become:yes
+  ^ here
+There appears to be a tab character at the start of the line.
+
+YAML does not use tabs for formatting. Tabs should be replaced with spaces.
+
+For example:
+    - name: update tooling
+      vars:
+        version: 1.2.3
+#    ^--- there is a tab there.
+
+Should be written as:
+    - name: update tooling
+      vars:
+        version: 1.2.3
+# ^--- all spaces here.
+
+2020-09-16 15:53:25,005 p=43181 u=ansibleadmin n=ansible | PLAY [cisco] ******************************************************************************************************************************************************************************************************
+2020-09-16 15:53:25,014 p=43181 u=ansibleadmin n=ansible | TASK [create a banner] ********************************************************************************************************************************************************************************************
+2020-09-16 15:53:25,472 p=43189 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 15:53:25,485 p=43188 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 15:53:25,900 p=43201 u=ansibleadmin n=p=43201 u=ansibleadmin | paramiko [192.168.10.133] | Connected (version 1.99, client Cisco-1.25)
+2020-09-16 15:53:25,903 p=43198 u=ansibleadmin n=p=43198 u=ansibleadmin | paramiko [192.168.10.134] | Connected (version 2.0, client Cisco-1.25)
+2020-09-16 15:53:26,713 p=43198 u=ansibleadmin n=p=43198 u=ansibleadmin | paramiko [192.168.10.134] | Authentication (password) successful!
+2020-09-16 15:53:27,368 p=43198 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 15:53:27,434 p=43181 u=ansibleadmin n=ansible | fatal: [192.168.10.134]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/libexec/platform-python"}, "changed": false, "msg": "socket_path does not exist or cannot be found.\nSee the socket_path issue category in Network Debug and Troubleshooting Guide"}
+2020-09-16 15:53:27,517 p=43201 u=ansibleadmin n=p=43201 u=ansibleadmin | paramiko [192.168.10.133] | Authentication (password) successful!
+2020-09-16 15:53:28,189 p=43201 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 15:53:28,294 p=43181 u=ansibleadmin n=ansible | fatal: [192.168.10.133]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/libexec/platform-python"}, "changed": false, "msg": "socket_path does not exist or cannot be found.\nSee the socket_path issue category in Network Debug and Troubleshooting Guide"}
+2020-09-16 15:53:28,297 p=43181 u=ansibleadmin n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2020-09-16 15:53:28,297 p=43181 u=ansibleadmin n=ansible | 192.168.10.133             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-16 15:53:28,297 p=43181 u=ansibleadmin n=ansible | 192.168.10.134             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-16 15:57:42,513 p=43296 u=ansibleadmin n=ansible | PLAY [ciscort] ****************************************************************************************************************************************************************************************************
+2020-09-16 15:57:42,522 p=43296 u=ansibleadmin n=ansible | TASK [Change Hostname R1] *****************************************************************************************************************************************************************************************
+2020-09-16 15:57:42,961 p=43303 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 15:57:43,393 p=43309 u=ansibleadmin n=p=43309 u=ansibleadmin | paramiko [192.168.10.134] | Connected (version 2.0, client Cisco-1.25)
+2020-09-16 15:57:44,192 p=43309 u=ansibleadmin n=p=43309 u=ansibleadmin | paramiko [192.168.10.134] | Authentication (password) successful!
+2020-09-16 15:57:44,792 p=43296 u=ansibleadmin n=ansible | fatal: [192.168.10.134]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/libexec/platform-python"}, "changed": false, "msg": "unable to elevate privilege to enable mode, at prompt [None] with error: For matched prompt 'b'\\nPassword: '', answer is not valid"}
+2020-09-16 15:57:44,796 p=43296 u=ansibleadmin n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2020-09-16 15:57:44,797 p=43296 u=ansibleadmin n=ansible | 192.168.10.134             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-16 15:57:44,894 p=43309 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 15:58:00,503 p=43339 u=ansibleadmin n=ansible | PLAY [ciscort] ****************************************************************************************************************************************************************************************************
+2020-09-16 15:58:00,512 p=43339 u=ansibleadmin n=ansible | TASK [Change Hostname R1] *****************************************************************************************************************************************************************************************
+2020-09-16 15:58:00,939 p=43346 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 15:58:01,366 p=43353 u=ansibleadmin n=p=43353 u=ansibleadmin | paramiko [192.168.10.134] | Connected (version 2.0, client Cisco-1.25)
+2020-09-16 15:58:02,174 p=43353 u=ansibleadmin n=p=43353 u=ansibleadmin | paramiko [192.168.10.134] | Authentication (password) successful!
+2020-09-16 15:58:02,807 p=43339 u=ansibleadmin n=ansible | fatal: [192.168.10.134]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/libexec/platform-python"}, "changed": false, "msg": "unable to elevate privilege to enable mode, at prompt [None] with error: For matched prompt 'b'\\nPassword: '', answer is not valid"}
+2020-09-16 15:58:02,811 p=43339 u=ansibleadmin n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2020-09-16 15:58:02,811 p=43339 u=ansibleadmin n=ansible | 192.168.10.134             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-16 15:58:02,911 p=43353 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 15:58:38,938 p=43400 u=ansibleadmin n=ansible | PLAY [ciscort] ****************************************************************************************************************************************************************************************************
+2020-09-16 15:58:38,947 p=43400 u=ansibleadmin n=ansible | TASK [Change Hostname R1] *****************************************************************************************************************************************************************************************
+2020-09-16 15:58:39,360 p=43407 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 15:58:39,811 p=43413 u=ansibleadmin n=p=43413 u=ansibleadmin | paramiko [192.168.10.134] | Connected (version 2.0, client Cisco-1.25)
+2020-09-16 15:58:40,599 p=43413 u=ansibleadmin n=p=43413 u=ansibleadmin | paramiko [192.168.10.134] | Authentication (password) successful!
+2020-09-16 15:58:41,296 p=43400 u=ansibleadmin n=ansible | fatal: [192.168.10.134]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/libexec/platform-python"}, "changed": false, "msg": "operation requires privilege escalation"}
+2020-09-16 15:58:41,299 p=43400 u=ansibleadmin n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2020-09-16 15:58:41,299 p=43400 u=ansibleadmin n=ansible | 192.168.10.134             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-16 15:58:41,399 p=43413 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 15:59:10,338 p=43459 u=ansibleadmin n=ansible | PLAY [ciscort] ****************************************************************************************************************************************************************************************************
+2020-09-16 15:59:10,346 p=43459 u=ansibleadmin n=ansible | TASK [Change Hostname R1] *****************************************************************************************************************************************************************************************
+2020-09-16 15:59:10,773 p=43466 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 15:59:11,196 p=43472 u=ansibleadmin n=p=43472 u=ansibleadmin | paramiko [192.168.10.134] | Connected (version 2.0, client Cisco-1.25)
+2020-09-16 15:59:11,984 p=43472 u=ansibleadmin n=p=43472 u=ansibleadmin | paramiko [192.168.10.134] | Authentication (password) successful!
+2020-09-16 15:59:12,587 p=43459 u=ansibleadmin n=ansible | fatal: [192.168.10.134]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/libexec/platform-python"}, "changed": false, "msg": "unable to elevate privilege to enable mode, at prompt [None] with error: For matched prompt 'b'\\nPassword: '', answer is not valid"}
+2020-09-16 15:59:12,590 p=43459 u=ansibleadmin n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2020-09-16 15:59:12,590 p=43459 u=ansibleadmin n=ansible | 192.168.10.134             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-16 15:59:12,689 p=43472 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 16:00:15,354 p=43510 u=ansibleadmin n=ansible | PLAY [cisco] ******************************************************************************************************************************************************************************************************
+2020-09-16 16:00:15,363 p=43510 u=ansibleadmin n=ansible | TASK [create a banner] ********************************************************************************************************************************************************************************************
+2020-09-16 16:00:15,862 p=43518 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 16:00:15,864 p=43517 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 16:00:16,329 p=43527 u=ansibleadmin n=p=43527 u=ansibleadmin | paramiko [192.168.10.133] | Connected (version 1.99, client Cisco-1.25)
+2020-09-16 16:00:16,332 p=43530 u=ansibleadmin n=p=43530 u=ansibleadmin | paramiko [192.168.10.134] | Connected (version 2.0, client Cisco-1.25)
+2020-09-16 16:00:17,133 p=43530 u=ansibleadmin n=p=43530 u=ansibleadmin | paramiko [192.168.10.134] | Authentication (password) successful!
+2020-09-16 16:00:17,756 p=43527 u=ansibleadmin n=p=43527 u=ansibleadmin | paramiko [192.168.10.133] | Authentication (password) successful!
+2020-09-16 16:00:17,786 p=43530 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 16:00:17,828 p=43510 u=ansibleadmin n=ansible | fatal: [192.168.10.134]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/libexec/platform-python"}, "changed": false, "msg": "socket_path does not exist or cannot be found.\nSee the socket_path issue category in Network Debug and Troubleshooting Guide"}
+2020-09-16 16:00:18,393 p=43527 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 16:00:18,457 p=43510 u=ansibleadmin n=ansible | fatal: [192.168.10.133]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/libexec/platform-python"}, "changed": false, "msg": "socket_path does not exist or cannot be found.\nSee the socket_path issue category in Network Debug and Troubleshooting Guide"}
+2020-09-16 16:00:18,459 p=43510 u=ansibleadmin n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2020-09-16 16:00:18,459 p=43510 u=ansibleadmin n=ansible | 192.168.10.133             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-16 16:00:18,459 p=43510 u=ansibleadmin n=ansible | 192.168.10.134             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-16 16:00:29,615 p=43591 u=ansibleadmin n=ansible | PLAY [ciscort] ****************************************************************************************************************************************************************************************************
+2020-09-16 16:00:29,624 p=43591 u=ansibleadmin n=ansible | TASK [Change Hostname R1] *****************************************************************************************************************************************************************************************
+2020-09-16 16:00:30,088 p=43598 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 16:00:30,566 p=43604 u=ansibleadmin n=p=43604 u=ansibleadmin | paramiko [192.168.10.134] | Connected (version 2.0, client Cisco-1.25)
+2020-09-16 16:00:31,375 p=43604 u=ansibleadmin n=p=43604 u=ansibleadmin | paramiko [192.168.10.134] | Authentication (password) successful!
+2020-09-16 16:00:31,977 p=43591 u=ansibleadmin n=ansible | fatal: [192.168.10.134]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/libexec/platform-python"}, "changed": false, "msg": "unable to elevate privilege to enable mode, at prompt [None] with error: For matched prompt 'b'\\nPassword: '', answer is not valid"}
+2020-09-16 16:00:31,982 p=43591 u=ansibleadmin n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2020-09-16 16:00:31,982 p=43591 u=ansibleadmin n=ansible | 192.168.10.134             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-16 16:00:32,081 p=43604 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 16:02:29,778 p=43716 u=ansibleadmin n=ansible | PLAY [cisco] ******************************************************************************************************************************************************************************************************
+2020-09-16 16:02:29,787 p=43716 u=ansibleadmin n=ansible | TASK [create a banner] ********************************************************************************************************************************************************************************************
+2020-09-16 16:02:30,204 p=43727 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 16:02:30,205 p=43726 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 16:02:30,632 p=43739 u=ansibleadmin n=p=43739 u=ansibleadmin | paramiko [192.168.10.133] | Connected (version 1.99, client Cisco-1.25)
+2020-09-16 16:02:30,634 p=43738 u=ansibleadmin n=p=43738 u=ansibleadmin | paramiko [192.168.10.134] | Connected (version 2.0, client Cisco-1.25)
+2020-09-16 16:02:31,438 p=43738 u=ansibleadmin n=p=43738 u=ansibleadmin | paramiko [192.168.10.134] | Authentication (password) successful!
+2020-09-16 16:02:32,090 p=43739 u=ansibleadmin n=p=43739 u=ansibleadmin | paramiko [192.168.10.133] | Authentication (password) successful!
+2020-09-16 16:02:32,099 p=43738 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 16:02:32,157 p=43716 u=ansibleadmin n=ansible | fatal: [192.168.10.134]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/libexec/platform-python"}, "changed": false, "msg": "socket_path does not exist or cannot be found.\nSee the socket_path issue category in Network Debug and Troubleshooting Guide"}
+2020-09-16 16:02:32,763 p=43739 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 16:02:32,822 p=43716 u=ansibleadmin n=ansible | fatal: [192.168.10.133]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/libexec/platform-python"}, "changed": false, "msg": "socket_path does not exist or cannot be found.\nSee the socket_path issue category in Network Debug and Troubleshooting Guide"}
+2020-09-16 16:02:32,824 p=43716 u=ansibleadmin n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2020-09-16 16:02:32,824 p=43716 u=ansibleadmin n=ansible | 192.168.10.133             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-16 16:02:32,825 p=43716 u=ansibleadmin n=ansible | 192.168.10.134             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-16 16:03:38,471 p=43811 u=ansibleadmin n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/ansibleadmin/ansible_test/test_cisco.yml': line 8, column 18, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  - name: show ip interface brief
+      ios_command:
+                 ^ here
+
+2020-09-16 16:04:18,076 p=43831 u=ansibleadmin n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/ansibleadmin/ansible_test/test_cisco.yml': line 8, column 18, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  - name: show ip interface brief
+      ios_command:
+                 ^ here
+
+2020-09-16 16:05:53,766 p=43867 u=ansibleadmin n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  mapping values are not allowed in this context
+
+The error appears to be in '/home/ansibleadmin/ansible_test/test_cisco.yml': line 8, column 17, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  - name: show ip interface brief
+      ios_config:
+                ^ here
+
+2020-09-16 16:07:58,126 p=43913 u=ansibleadmin n=ansible | PLAY [ciscort] ****************************************************************************************************************************************************************************************************
+2020-09-16 16:07:58,134 p=43913 u=ansibleadmin n=ansible | TASK [show ip interface brief] ************************************************************************************************************************************************************************************
+2020-09-16 16:07:58,536 p=43920 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 16:07:58,952 p=43926 u=ansibleadmin n=p=43926 u=ansibleadmin | paramiko [192.168.10.134] | Connected (version 2.0, client Cisco-1.25)
+2020-09-16 16:07:59,764 p=43926 u=ansibleadmin n=p=43926 u=ansibleadmin | paramiko [192.168.10.134] | Authentication (password) successful!
+2020-09-16 16:08:00,377 p=43913 u=ansibleadmin n=ansible | fatal: [192.168.10.134]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/libexec/platform-python"}, "changed": false, "msg": "unable to elevate privilege to enable mode, at prompt [None] with error: For matched prompt 'b'\\nPassword: '', answer is not valid"}
+2020-09-16 16:08:00,380 p=43913 u=ansibleadmin n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2020-09-16 16:08:00,380 p=43913 u=ansibleadmin n=ansible | 192.168.10.134             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-16 16:08:00,480 p=43926 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 16:09:44,742 p=44001 u=ansibleadmin n=ansible | PLAY [ciscort] ****************************************************************************************************************************************************************************************************
+2020-09-16 16:09:44,751 p=44001 u=ansibleadmin n=ansible | TASK [show ip interface brief] ************************************************************************************************************************************************************************************
+2020-09-16 16:09:45,173 p=44008 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 16:09:45,583 p=44014 u=ansibleadmin n=p=44014 u=ansibleadmin | paramiko [192.168.10.134] | Connected (version 2.0, client Cisco-1.25)
+2020-09-16 16:09:46,384 p=44014 u=ansibleadmin n=p=44014 u=ansibleadmin | paramiko [192.168.10.134] | Authentication (password) successful!
+2020-09-16 16:09:47,434 p=44001 u=ansibleadmin n=ansible | ok: [192.168.10.134]
+2020-09-16 16:09:47,439 p=44001 u=ansibleadmin n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2020-09-16 16:09:47,439 p=44001 u=ansibleadmin n=ansible | 192.168.10.134             : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-16 16:09:47,539 p=44014 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 16:10:46,039 p=44069 u=ansibleadmin n=ansible | PLAY [ciscort] ****************************************************************************************************************************************************************************************************
+2020-09-16 16:10:46,048 p=44069 u=ansibleadmin n=ansible | TASK [show ip interface brief] ************************************************************************************************************************************************************************************
+2020-09-16 16:10:46,469 p=44076 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 16:10:46,919 p=44082 u=ansibleadmin n=p=44082 u=ansibleadmin | paramiko [192.168.10.134] | Connected (version 2.0, client Cisco-1.25)
+2020-09-16 16:10:47,717 p=44082 u=ansibleadmin n=p=44082 u=ansibleadmin | paramiko [192.168.10.134] | Authentication (password) successful!
+2020-09-16 16:10:48,685 p=44069 u=ansibleadmin n=ansible | ok: [192.168.10.134]
+2020-09-16 16:10:48,688 p=44069 u=ansibleadmin n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2020-09-16 16:10:48,688 p=44069 u=ansibleadmin n=ansible | 192.168.10.134             : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-16 16:10:48,788 p=44082 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 16:13:36,601 p=44146 u=ansibleadmin n=ansible | PLAY [ciscort] ****************************************************************************************************************************************************************************************************
+2020-09-16 16:13:36,613 p=44146 u=ansibleadmin n=ansible | TASK [Change Hostname R1] *****************************************************************************************************************************************************************************************
+2020-09-16 16:13:37,028 p=44153 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 16:13:37,469 p=44159 u=ansibleadmin n=p=44159 u=ansibleadmin | paramiko [192.168.10.134] | Connected (version 2.0, client Cisco-1.25)
+2020-09-16 16:13:38,259 p=44159 u=ansibleadmin n=p=44159 u=ansibleadmin | paramiko [192.168.10.134] | Authentication (password) successful!
+2020-09-16 16:13:38,996 p=44146 u=ansibleadmin n=ansible | fatal: [192.168.10.134]: FAILED! => {"ansible_facts": {"discovered_interpreter_python": "/usr/libexec/platform-python"}, "changed": false, "msg": "operation requires privilege escalation"}
+2020-09-16 16:13:39,001 p=44146 u=ansibleadmin n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2020-09-16 16:13:39,001 p=44146 u=ansibleadmin n=ansible | 192.168.10.134             : ok=0    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2020-09-16 16:13:39,102 p=44159 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 16:14:07,903 p=44205 u=ansibleadmin n=ansible | PLAY [ciscort] ****************************************************************************************************************************************************************************************************
+2020-09-16 16:14:07,913 p=44205 u=ansibleadmin n=ansible | TASK [Change Hostname R1] *****************************************************************************************************************************************************************************************
+2020-09-16 16:14:08,339 p=44212 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 16:14:08,786 p=44218 u=ansibleadmin n=p=44218 u=ansibleadmin | paramiko [192.168.10.134] | Connected (version 2.0, client Cisco-1.25)
+2020-09-16 16:14:09,583 p=44218 u=ansibleadmin n=p=44218 u=ansibleadmin | paramiko [192.168.10.134] | Authentication (password) successful!
+2020-09-16 16:14:11,273 p=44205 u=ansibleadmin n=ansible | changed: [192.168.10.134]
+2020-09-16 16:14:11,278 p=44205 u=ansibleadmin n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2020-09-16 16:14:11,278 p=44205 u=ansibleadmin n=ansible | 192.168.10.134             : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-16 16:14:11,377 p=44218 u=ansibleadmin n=ansible | shutdown complete
+2020-09-16 16:18:56,017 p=44340 u=ansibleadmin n=ansible | PLAY [ciscort] ****************************************************************************************************************************************************************************************************
+2020-09-16 16:18:56,026 p=44340 u=ansibleadmin n=ansible | TASK [Change Hostname R1] *****************************************************************************************************************************************************************************************
+2020-09-16 16:18:56,429 p=44347 u=ansibleadmin n=ansible | network_os is set to ios
+2020-09-16 16:18:56,869 p=44353 u=ansibleadmin n=p=44353 u=ansibleadmin | paramiko [192.168.10.134] | Connected (version 2.0, client Cisco-1.25)
+2020-09-16 16:18:57,681 p=44353 u=ansibleadmin n=p=44353 u=ansibleadmin | paramiko [192.168.10.134] | Authentication (password) successful!
+2020-09-16 16:18:59,352 p=44340 u=ansibleadmin n=ansible | changed: [192.168.10.134]
+2020-09-16 16:18:59,355 p=44340 u=ansibleadmin n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************************************
+2020-09-16 16:18:59,355 p=44340 u=ansibleadmin n=ansible | 192.168.10.134             : ok=1    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2020-09-16 16:18:59,455 p=44353 u=ansibleadmin n=ansible | shutdown complete

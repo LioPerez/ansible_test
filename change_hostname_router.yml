@@ -1,0 +1,11 @@
+---
+
+- hosts: ciscort
+  gather_facts: false
+  become: true
+  tasks:
+
+  - name: Change Hostname R1
+    ios_config:
+      lines: 
+        - hostname R1

@@ -33,6 +33,7 @@ ansible_user=ansibleadmin
 ansible_connection=network_cli
 ansible_network_os=ios
 ansible_user=ansibleadmin
+ansible_password=SWadmin-1
 
 [ciscort]
 192.168.10.134
@@ -41,3 +42,4 @@ ansible_user=ansibleadmin
 ansible_connection=network_cli
 ansible_network_os=ios
 ansible_user=ansibleadmin
+ansible_password= RTadmin-1

@@ -1,0 +1,18 @@
+--- 
+
+- hosts:ciscort
+  gather_facts:false
+  become: true
+  tasks:
+
+  - name: add VLAN 10 to the f0/1 intf
+    ios_vlan:
+      name: Vlan de test
+      vlan_id: 10    
+      interfaces: FastEthernet0/1
+      state: present
+
+  - name: check if VLAN 5 (SWISSCOM1) is assigned to f0/0 
+    ios_vlan:
+      vlan_id: 5
+      associated_interfaces: FastEthernet0/0

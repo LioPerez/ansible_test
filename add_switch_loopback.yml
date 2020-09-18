@@ -1,0 +1,11 @@
+---
+- hosts: ciscosw
+  gather_facts: false
+  become: true
+  tasks: 
+ 
+  - name: add loopback adress switch
+    ios_interface:
+      name: Loopback21
+      state: present
+    

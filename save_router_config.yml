@@ -1,0 +1,16 @@
+---
+- hosts : ciscort
+  gather_facts: false
+  become: true
+  tasks:
+
+  - name : show and register running-config
+    ios_command:
+      commands:
+        - show run
+    register: config
+
+  - name: save output to ~/ansible_test/backups
+    copy:
+      content: "{{ config.stdout[0] }}" 
+      dest: "~/ansible_test/backups/show_run_{{ inventory_hostname }}.txt"

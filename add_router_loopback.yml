@@ -1,0 +1,10 @@
+---
+- hosts: ciscort
+  gather_facts: false
+  become: true
+  tasks: 
+
+  - name: Add loopback interface
+    ios_interface:
+      name: Loopback21
+      state: present

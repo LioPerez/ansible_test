@@ -1,0 +1,99 @@
+Building configuration...
+
+Current configuration : 1241 bytes
+!
+! Last configuration change at 14:25:45 UTC Wed Sep 16 2020 by ansibleadmin
+!
+version 15.1
+service timestamps debug datetime msec
+service timestamps log datetime msec
+no service password-encryption
+!
+hostname 2023RT1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+enable secret 5 $1$78DU$Bsiubu/iYxMQY6WzmX6W4.
+enable password .Etml-
+!
+no aaa new-model
+!
+dot11 syslog
+ip source-route
+no ip routing
+!
+!
+!
+!
+!
+no ip cef
+no ip domain lookup
+ip domain name ansible.local
+no ipv6 cef
+!
+multilink bundle-name authenticated
+!
+crypto pki token default removal timeout 0
+!
+!
+!
+!
+license udi pid CISCO1841 sn FCZ135090YA
+username ansibleadmin password 0 IOSadmin-1
+!
+redundancy
+!
+!
+ip ssh version 2
+! 
+!
+!
+!
+!
+!
+!
+interface FastEthernet0/0
+ ip address 192.168.10.134 255.255.255.0
+ no ip route-cache
+ speed auto
+ full-duplex
+ no mop enabled
+!
+interface FastEthernet0/1
+ no ip address
+ no ip route-cache
+ shutdown
+ duplex auto
+ speed auto
+!
+ip default-gateway 192.168.10.1
+ip forward-protocol nd
+no ip http server
+no ip http secure-server
+!
+!
+!
+logging esm config
+!
+!
+!
+!
+snmp-server community n RO
+!
+!
+control-plane
+!
+!
+!
+line con 0
+line aux 0
+line vty 0 4
+ password class
+ login local
+ transport input ssh
+!
+scheduler allocate 20000 1000
+netconf ssh
+end

@@ -13,6 +13,6 @@
       state: present
 
   - name: check if VLAN 5 (SWISSCOM1) is assigned to f0/0
-    ios_vlan
+    ios_vlan:
       vlan_id: 5
       associated_interfaces: FastEthernet0/0

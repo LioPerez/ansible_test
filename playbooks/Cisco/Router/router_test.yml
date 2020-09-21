@@ -1,0 +1,18 @@
+---
+
+- hosts: ciscort
+  gather_facts: false
+  become: true
+  tasks:
+
+  - name: Create a cisco banner
+    include: create_cisco_banner.yml
+
+  - name: add a loopback address
+    include: add_router_loopback.yml
+
+  - name: change router hostname
+    include: change_hostname_router.yml
+
+  - name: Save router Config
+    include: save_router_config.yml

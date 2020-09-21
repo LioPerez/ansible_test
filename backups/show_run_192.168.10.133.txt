@@ -1,8 +1,8 @@
 Building configuration...
 
-Current configuration : 3150 bytes
+Current configuration : 3422 bytes
 !
-! Last configuration change at 01:58:08 UTC Thu Mar 31 2011
+! Last configuration change at 23:47:34 UTC Mon Apr 4 2011
 ! NVRAM config last updated at 04:41:23 UTC Thu Mar 31 2011
 !
 version 15.2
@@ -80,6 +80,9 @@ vlan internal allocation policy ascending
 !
 !
 !
+interface Loopback21
+ no ip address
+!
 interface FastEthernet0/1
  switchport access vlan 5
  switchport mode access
@@ -101,8 +104,12 @@ interface FastEthernet0/5
  switchport mode access
 !
 interface FastEthernet0/6
+ switchport access vlan 5
+ switchport mode access
 !
 interface FastEthernet0/7
+ switchport access vlan 5
+ switchport mode access
 !
 interface FastEthernet0/8
 !
@@ -128,6 +135,10 @@ ip http secure-server
 !
 !
 !
+banner login ^C
+Test de baniere
+avec Ansible
+^C
 !
 line con 0
 line vty 0 4
@@ -138,5 +149,8 @@ line vty 5 15
  password class
  login
 !
+!
+monitor session 1 source interface Fa0/3
+monitor session 1 destination interface Fa0/7
 !
 end

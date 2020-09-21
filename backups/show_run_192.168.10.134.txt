@@ -1,15 +1,15 @@
 Building configuration...
 
-Current configuration : 1241 bytes
+Current configuration : 1282 bytes
 !
-! Last configuration change at 14:25:45 UTC Wed Sep 16 2020 by ansibleadmin
+! Last configuration change at 10:30:53 UTC Mon Sep 21 2020 by ansibleadmin
 !
 version 15.1
 service timestamps debug datetime msec
 service timestamps log datetime msec
 no service password-encryption
 !
-hostname 2023RT1
+hostname R1
 !
 boot-start-marker
 boot-end-marker
@@ -86,6 +86,10 @@ snmp-server community n RO
 control-plane
 !
 !
+banner login ^C
+Test de baniere
+avec Ansible
+^C
 !
 line con 0
 line aux 0

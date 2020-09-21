@@ -8,4 +8,4 @@
   - name: Change Hostname R1
     ios_config:
       lines: 
-        - hostname R1
+        - hostname 2023Rt1

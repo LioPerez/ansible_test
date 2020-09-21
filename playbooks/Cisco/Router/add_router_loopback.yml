@@ -7,4 +7,6 @@
   - name: Add loopback interface
     ios_interface:
       name: Loopback21
-      state: present 
+      state: present
+
+ 

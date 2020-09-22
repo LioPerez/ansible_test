@@ -1,0 +1,12 @@
+---
+  - name: Create a cisco banner
+    import_playbook: create_cisco_banner.yml
+
+  - name: add a loopback address
+    import_playbook: add_router_loopback.yml
+
+  - name: change router hostname
+    import_playbook: change_hostname_router.yml
+
+  - name: Save router Config
+    import_playbook: save_router_config.yml

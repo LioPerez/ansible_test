@@ -1,8 +1,0 @@
----
-
-- hosts: ciscort
-  become: true
-  tasks: 
-
-  - name: Save router COnfig
-    include: save_router_config.yml

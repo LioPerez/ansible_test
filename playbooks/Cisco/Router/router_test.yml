@@ -1,7 +1,6 @@
 ---
 
 - hosts: ciscort
-  gather_facts: false
   become: true
   tasks:
 
@@ -13,6 +12,9 @@
 
   - name: change router hostname
     include: change_hostname_router.yml
+
+  - name: Add Vlan 10 to router
+    include: create_router_vlan.yml
 
   - name: Save router Config
     include: save_router_config.yml
